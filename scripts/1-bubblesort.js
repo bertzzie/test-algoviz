@@ -62,7 +62,7 @@
 
     //var Run = function () {
         av   = new JSAV("container", {title: "Bubble Sort"}),
-        code = av.code({url: "../code/2-bubble-sort.js"}),
+        code = av.code({url: "http://bertzzie.github.io/test-algoviz/code/2-bubble-sort.js"}),
         arr  = av.ds.array([10, 7, 3, 6, 4, 8, 5, 9], {indexed: true, layout: "bar"});
 
         av.umsg("Starting bubble sort");
