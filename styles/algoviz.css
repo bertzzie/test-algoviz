@@ -1,0 +1,61 @@
+.jsavcontainer {
+    padding: 0;
+    text-align: center;
+    width: 515px;
+}
+
+.jsavoutput.jsavline {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.jsavcontainer .jsavcodeline {
+    text-align: left;
+}
+
+.jsavbararray .jsavindex {
+    margin-left: 1px;
+}
+.jsavarray.jsavbararray .jsavindex.jsavhighlight .jsavvalue,
+.jsavcodeline.jsavcurrentline,
+.jsavcodeline.jsavhighlight {
+    background-color: #55F;
+    color: #FFF;
+}
+
+.jsavvariable {
+    display: inline-block;
+    margin: 10px auto;
+    width: 75px;
+    text-align: center;
+}
+
+.jsavvalue {
+    height: auto;
+}
+
+.jsavvaluelabel {
+    display: inline;
+}
+
+.jsavcontrols {
+    background-color: rgba(5, 5, 255, 0.5);
+}
+
+.jsavcontrols a {
+    background-color: rgba(5, 5, 255, 0.5);
+    border-radius: 0;
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    width: 24.8%;
+}
+
+.jsavcontrols .jsavbackward {
+    border-left: 1px solid #FFF;
+    border-right: 1px solid #FFF;
+}
+
+.jsavcontrols .jsavforward {
+    border-right: 1px solid #FFF;
+}
