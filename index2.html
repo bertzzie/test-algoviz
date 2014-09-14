@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="libs/jquery/jquery-ui.structure.min.css">
     <link rel="stylesheet" href="libs/jquery/jquery-ui.theme.min.css">
     <link rel="stylesheet" href="libs/JSAV/css/JSAV.css">
-    <link rel="stylesheet" href="styles/algoviz.css">
 
     <script type="text/javascript" src="libs/jquery/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="libs/jquery/jquery-ui.min.js"></script>
@@ -18,12 +17,36 @@
 </head>
 <body>
     <div id="container">
-        <h1>Bubble Sort</h1>
+        <div class="jsavcontrols"></div>
         <p class="jsavoutput jsavline"></p>
         <div class="jsavcanvas"></div>
-        <div class="jsavcontrols"></div>
     </div>
 
-    <script type="text/javascript" src="scripts/1-bubblesort.js"></script>
+    <div id="output"></div>
+
+    <script type="text/javascript">
+        var av = new JSAV("container", {title: "Bubble Sort"});
+        var code = ["a = 10", "b = 5", "temp = a", "a = b", "b = temp"];
+
+        av.displayInit();
+        var pseudo = av.code(code);
+        av.step();
+        pseudo.highlight(1);
+        av.step();
+        pseudo.unhighlight(1);
+        pseudo.highlight(2);
+        av.step();
+        pseudo.unhighlight(2);
+        pseudo.highlight(3);
+        av.step();
+        pseudo.unhighlight(3);
+        pseudo.highlight(4);
+        av.step();
+        pseudo.unhighlight(4);
+        pseudo.highlight(5);
+        av.step();
+        pseudi.unhighlight(5);
+        av.recorded();
+    </script>
 </body>
 </html>
